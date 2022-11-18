@@ -1,0 +1,648 @@
+:root {
+	--back_color: #2F80C2;
+	--nav_back: #0058A0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+	font-size: 15pt;
+	background: var(--back_color);
+	height: auto;
+	scroll-behavior: smooth;
+}
+
+nav {
+	height: 60px;
+	width: 100%;
+	background: var(--nav_back);
+}
+
+nav .logo_icon {
+	color: #fff;
+
+}
+
+.logo_icon {
+	font-size: 39px;
+	font-weight: 800;
+	margin-left: 25px;
+	letter-spacing: 8px;
+	padding-left: 10px;
+	margin-top: 6.0px;
+	display: inline-block;
+	padding: 0;
+	border-bottom: 4px solid green;
+	text-align: center;
+	pointer-events: none;
+}
+
+nav ul {
+	float: right;
+	display: flex;
+	margin-right: 20px;
+	margin-top: 19px;
+	transform: translateX(-33%);
+	list-style: none;
+}
+
+li a {
+	border: 1px solid var(--back_color);
+	text-decoration: none;
+	margin-left: 50px;
+	color: #fff;
+	font-size: 21px;
+	font-weight: 600;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+/* ######## NAV BAR ---- END ############# */
+.get_start {
+	position: absolute;
+	right: 0;
+	margin-right: 25px;
+	margin-top: 9px;
+	cursor: pointer;
+	border: 2px solid green !important;
+	background: none !important;
+	transition: background 1s ease-in-out !important;
+}
+
+.get_start:hover {
+	background: green !important;
+	transition: background 1s ease-in-out !important;
+}
+
+/* ######## NAV BAR --BUTTON ---- END ############# */
+.btn {
+	padding: 9px 18px;
+	font-size: 20px;
+	font-weight: 800;
+	border: none;
+	outline: none;
+	border-radius: 6px;
+	background: green;
+	color: ghostwhite;
+}
+
+/* ##### all button this style ###### */
+
+/* #######  start of login box ######## */
+.log_sign_box {
+	background: white;
+	width: 50%;
+	margin-left: -50px;
+	margin-right: 50px;
+	transform: translate(60%, 5%);
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 30px;
+	border-radius: 8px;
+	box-shadow: 0px 10px 10pc 10rem var(--back_color);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .3s ease-in-out;
+}
+
+.log_sign_box.log_in_active {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+/* ###### some javascript code here  $$$$$$$$$$$$$$$$$$$$$$$$$$$$ ####### */
+
+.box-nav-bar .log-b,
+.log-c {
+	height: 55px;
+	width: 54.4%;
+	padding-left: 0;
+	padding-right: 0;
+	font-size: 30px;
+	font-weight: 800;
+	background: var(--back_color);
+	color: #fff;
+	margin-left: -20px;
+	margin-right: 20px;
+	border: none;
+	outline: none;
+	border-radius: 7px 0px 30px 0px;
+	cursor: pointer;
+}
+
+.log_sign_box .log-c {
+	float: right;
+	margin-right: -20px;
+	border-radius: 0px 7px 0px 30px;
+	background: none;
+	color: #111;
+}
+
+.log-c.sing_active {
+	background: var(--back_color);
+	color: #fff;
+	transition: background 1s ease-in-out;
+}
+
+.log-b.log_remove {
+	background: none;
+	color: #111;
+	transition: background 1s ease;
+}
+
+/* ###### log in nav is OK ###### */
+.login-inputs-boxs {
+	margin-top: 15px;
+	height: 80%;
+}
+
+.login-inputs-boxs input {
+	font-size: 25px;
+	width: 100%;
+	margin-top: 20px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	background: #DDEFFF;
+}
+
+.chack-boxs {
+	display: block;
+	padding: 0px 20px;
+}
+
+.chack-boxs .inp-chak {
+	position: absolute;
+	left: -200px;
+	height: 25px;
+
+}
+
+.chack-boxs p {
+	padding-top: 21px;
+	padding-left: 20px;
+	font-size: 21px;
+}
+
+.submit-button button {
+	font-size: 24px;
+	font-weight: 800;
+	color: #fff;
+	background: orangered;
+	margin: 0px;
+	margin-top: 30px;
+	width: 100%;
+	padding: 15px 20px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+.pas-forget {
+	text-decoration: none;
+	color: red;
+	display: block;
+	text-align: center;
+	padding-top: 25px;
+}
+
+/* ############ Log in _---_ Sign Up is been EnD ############# */
+.banner {
+	position: absolute;
+	top: 60px;
+	margin-top: 37px;
+	margin-left: 25px;
+	letter-spacing: 3px;
+	transition: opacity .1s ease-in-out;
+}
+
+.banner.banner_remove {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.banner h1 {
+	color: #fff;
+	font-weight: 800;
+	font-size: 46px;
+	pointer-events: none;
+}
+
+.banner p {
+	letter-spacing: 4px;
+	font-weight: 600;
+	margin-top: 20px;
+	color: #333;
+	pointer-events: none;
+}
+
+.banner span {
+	color: #fff;
+	font-size: 30px;
+}
+
+.banner .html {
+	color: orangered;
+}
+
+.banner .css {
+	color: var(--nav_back);
+}
+
+.banner .js {
+	color: yellow;
+}
+
+.banner .clon {
+	color: #fff;
+}
+
+.banner button {
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+.banner .video-btn {
+	background: orange;
+	margin-left: 10px;
+}
+
+/* ################## services start ############## */
+.service-col-box{
+	background: url('./satting.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 10px;
+	height: 250px;
+	width: 45%;
+	display: inline-block;
+	margin-left: 26px;
+	margin-top: 20px;
+	border-radius: 9px;
+	padding: 20px;
+	transition: all 1.5s ease-in-out;
+}
+.service-col-box:hover{
+	transform: rotate(90deg);
+	transition: all 1.5s ease-in-out;
+}
+.service-col-box button{
+	position: relative;
+	padding: 20px 30px;
+	transition: 1s ease-in-out;
+}
+.service-col-box button:hover{
+	background: var(--back_color);
+	transform: rotate(-90deg);
+	transition: 1s ease-in-out;
+
+}
+.service-col-box .button_H{
+	font-size: 30px;
+	display: block;
+	margin-left: 18%;
+	margin-top: 18.9%;
+}
+.service-col-box .button_C{
+	font-size: 30px;
+	display: block;
+	margin-left: 24%;
+	margin-top: 19%;
+}
+.service-col-box .button_J{
+	font-size: 30px;
+	display: block;
+	margin-left: 6%;
+	margin-top: 20%;
+}
+.service-col-box .button_O{
+	font-size: 30px;
+	display: block;
+	margin-left: 4%;
+	margin-top: 18%;
+}
+
+
+/* ################## about start ############## */
+
+.about_box {
+	width: 100%;
+}
+
+.about_box .contant-of-about {
+	background: #B8D7FF;
+	width: 95%;
+	margin: 0 auto;
+	border-radius: 9px;
+	padding-bottom: 30px;
+	/* 	padding-left: 30px;
+padding-right: 30px; */
+}
+
+.contant-of-about h1 {
+	text-align: center;
+	font-size: 50px;
+	color: #111;
+	padding-top: 20px;
+	border-bottom: 2px solid #666;
+	margin: 0 25%;
+}
+
+.contant-of-about img {
+	width: 30%;
+	display: inline-block;
+	border-radius: 9px;
+	margin-top: 20px;
+	margin-left: 25px;
+}
+
+.contant-of-about p {
+	float: right;
+	text-align: justify;
+	background: darkgray;
+	padding: 20px;
+	margin-right: 25px;
+	margin-top: 20px;
+	border-radius: 9px;
+	font-weight: 500;
+	font-size: 20px;
+	color: #333;
+}
+
+.about_box {
+	margin-top: 55px;
+}
+
+.contant-of-contact .massage {
+	font-size: 30px;
+	margin-left: 25px;
+	margin-top: 20px;
+	height: 300px;
+	width: 50%;
+	padding: 20px;
+	border: none;
+	outline: none;
+	border-radius: 9px;
+	background: #CAD4EB;
+}
+
+.contant-of-contact input {
+	font-size: 30px;
+	height: 70px;
+	width: 50%;
+	margin-top: 20px;
+	margin-left: 25px;
+	border: none;
+	outline: none;
+	border-radius: 9px;
+	padding-left: 10px;
+	background: #CAD4EB;
+}
+
+.contant-of-contact button {
+	margin-top: 20px;
+	margin-left: 25px;
+	font-size: 30px;
+	width: 50%;
+	transition: all 1s ease-in-out;
+}
+
+.contant-of-contact button:hover {
+	background: none;
+	border: 2px solid green;
+	color: black;
+	transition: all 1s ease-in-out;
+}
+
+.menu-button {
+	display: none;
+}
+
+/* @#################### Footer ################@ */
+footer .footer-mar{
+	margin-bottom: 10px;
+	width: 100%;
+	background: var(--nav_back);
+}
+.footer-mar .footer-text{
+	background: none;
+
+}
+.footer-text h1{
+	font-size: 20px;
+	color: #fff;
+	padding: 30px 10px;
+	padding-bottom: 0 !important;
+	margin-bottom: 0px;
+
+}
+
+.name-text{
+	color: green;
+	font-weight: 800;
+	font-size: 27px;
+
+}
+.copyri{
+	color: red; 
+	font-size: 30px;
+	font-weight: 800;
+}
+
+
+
+
+
+
+
+/*######### media #######*/
+
+@media (max-width: 720px) {
+	.logo_icon {
+		font-size: 25px;
+		margin-top: 10px;
+	}
+
+	nav ul {
+		background: var(--nav_back);
+		display: inline;
+		height: 500px;
+		width: 105%;
+		position: absolute;
+		margin: -150% 10px;
+		transition: margin .5s ease-in-out;
+		box-shadow: 0 0 90px 90px var(--nav_back);
+	}
+
+	ul.ul_active {
+		margin-top: 0%;
+	}
+
+	ul li {
+		margin-top: 80px;
+		margin-left: 40px;
+	}
+
+	li a {
+		border: 1px solid #B8D7FF;
+		text-align: center;
+	}
+
+	.menu_btn {
+		background: var(--nav_back);
+		transition: opacity .1s ease;
+	}
+
+	.menu_btn.remov_menu_btn {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	.get_start {
+		font-size: 15px;
+		transition: opacity .1s ease-in-out;
+	}
+
+	.get_start.remov_get_start {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	.log_sign_box {
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+		transform: translate(0%, 0%);
+		box-shadow: none;
+	}
+
+	.chack-boxs .inp-chak {
+		left: -170px;
+	}
+
+	.chack-boxs p {
+		font-size: 19px;
+	}
+
+	.menu-button {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 65%;
+	}
+
+
+	.banner h1 {
+		font-size: 32px;
+		margin-top: 4px;
+	}
+
+
+	.banner p {
+		font-size: 17px;
+		margin-top: 30px;
+	}
+
+	.banner button {
+		margin-top: 35px;
+	}
+	
+
+	.contant-of-about {
+		height: 610px;
+	}
+
+	.contant-of-about h1 {
+		font-size: 30px;
+	}
+
+	.contant-of-about img {
+		width: 90%;
+		margin-left: 20px;
+	}
+
+	.contant-of-about p {
+		margin-left: 26px;
+		width: 88%;
+	}
+	
+
+	.contant-of-contact {
+		height: auto;
+		margin-bottom: 500px;
+		
+	}
+
+	.contant-of-contact .massage {
+		font-size: 20px;
+		width: 90%;
+		background: #D9D9DA;
+		margin-left: 20px;
+	}
+
+	.contant-of-contact input {
+		width: 90%;
+		font-size: 20px;
+		padding-left: 20px;
+		margin-left: 20px;
+	}
+
+	.contant-of-contact button {
+		width: 90%;
+		height: 60px;
+		font-size: 20px;
+		margin-left: 20px;
+	}
+	.contant-of-services {
+		height: auto;
+	}
+	.service-col-box{
+	width: 90%;
+	margin-left: 20px;
+}
+
+.service-col-box .button_H{
+	margin-left: 10.4%;
+	margin-top: 21.7%;
+}
+.service-col-box .button_C{
+	margin-left: 16%;
+	margin-top: 22%;
+}
+.service-col-box .button_J{
+	font-size: 26px;
+	display: block;
+	margin-left: 3%;
+	margin-top: 23%;
+}
+.service-col-box .button_O{
+	font-size: 26px;
+	display: block;
+	margin-left: 1%;
+	margin-top: 24%;
+}
+footer .footer-mar{
+	background: var(--nav_back);
+	height: 100px;
+}
+.footer-text h1{
+	font-size: 20px;
+	padding: 10px 20px;
+	background: none;
+	width: 100%;
+	margin: 0;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footer-text span{
+	color: #EAECFF;
+}
+
+
+}
